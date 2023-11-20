@@ -1,5 +1,6 @@
 import homeLoad from "./components/homeLoad";
 import menuLoad from "./components/menuLoad";
+import contactLoad from "./components/contactLoad";
 import "./styles/styles.css";
 
 homeLoad();
@@ -14,6 +15,11 @@ document.getElementById("menuBtn").addEventListener("click", () => {
 document.getElementById("homeBtn").addEventListener("click", () => {
   contentContainer.innerHTML = "";
   homeLoad();
+});
+
+document.getElementById("contactBtn").addEventListener("click", () => {
+  contentContainer.innerHTML = "";
+  contactLoad();
 });
 
 console.log("Hello Webpack!");
